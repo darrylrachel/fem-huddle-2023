@@ -62,24 +62,27 @@ body {
   font-size: 18px;
 }
 
+.container {
+  padding: 40px 80px;
+}
+
 .hero {
   background: url(../../images/bg-hero-desktop.svg) no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 84vh;
   background-color: rgb(237, 251, 255);
-  padding: 40px 80px;
 }
-.hero .container .hero__header {
+.hero .hero__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.hero .container .hero__header .hero__header-logo img {
+.hero .hero__header .hero__header-logo img {
   width: 200px;
   height: 30px;
 }
-.hero .container .hero__header .hero__header-cta {
+.hero .hero__header .hero__header-cta {
   background: #fff;
   color: hsl(192, 100%, 9%);
   display: flex;
@@ -92,34 +95,34 @@ body {
   border-radius: 50px;
   filter: drop-shadow(0px 3px 11px rgba(0, 0, 0, 0.1));
 }
-.hero .container .hero__content {
+.hero .hero__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 70px;
 }
-.hero .container .hero__content .hero__content-left {
+.hero .hero__content .hero__content-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 550px;
   padding-top: 110px;
 }
-.hero .container .hero__content .hero__content-left .hero__content-left--title p {
+.hero .hero__content .hero__content-left .hero__content-left--title p {
   color: hsl(192, 100%, 9%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 48px;
   letter-spacing: 1px;
 }
-.hero .container .hero__content .hero__content-left .hero__content-left--body p {
+.hero .hero__content .hero__content-left .hero__content-left--body p {
   color: hsl(192, 100%, 9%);
   padding-top: 35px;
   font-size: 1.2rem;
   line-height: 1.2;
   line-height: 24px;
 }
-.hero .container .hero__content .hero__content-left .hero__content-left--cta {
+.hero .hero__content .hero__content-left .hero__content-left--cta {
   color: #fff;
   background: hsl(322, 100%, 66%);
   border-radius: 50px;
@@ -132,7 +135,53 @@ body {
   border: none;
   margin-top: 35px;
 }
-.hero .container .hero__content .hero__content-right img {
+.hero .hero__content .hero__content-right img {
   width: 790px;
   height: 555px;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px 0 160px 0;
+}
+.main__content .main__content-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  width: 70%;
+}
+.main__content .main__content-cards .main__content-card {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  width: 100%;
+  margin: 40px 0;
+  justify-content: space-around;
+  align-items: center;
+  filter: drop-shadow(0px 3px 11px rgba(0, 0, 0, 0.1));
+  padding: 44px 0;
+}
+.main__content .main__content-cards .main__content-card .main__content-card-body {
+  width: 48%;
+  padding-left: 28px;
+}
+.main__content .main__content-cards .main__content-card .main__content-card-body .title {
+  color: hsl(192, 100%, 9%);
+  font-size: 28px;
+  font-weight: 600;
+}
+.main__content .main__content-cards .main__content-card .main__content-card-body .body {
+  color: hsl(208, 11%, 55%);
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+.main__content .main__content-cards .main__content-card .main__content-card--img img {
+  width: 410px;
+  height: 340px;
 }/*# sourceMappingURL=styles.css.map */

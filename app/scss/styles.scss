@@ -10,6 +10,9 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 }
+.container {
+	padding: 40px 80px;
+}
 
 .hero {
 	background: url(../../images/bg-hero-desktop.svg) no-repeat center center;
@@ -17,87 +20,136 @@ body {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	height: 100vh;
+	height: 84vh;
 	background-color: rgba(237, 251, 255, 100);
-	padding: 40px 80px;
 
-	.container {
-	// border: 1px solid aqua;
+	.hero__header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 
-		.hero__header {
-			// background: black;
+		.hero__header-logo img {
+			width: 200px;
+			height: 30px;
+		}
+		.hero__header-cta {
+			background: #fff;
+			color: $darkCyan;
 			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+			flex-direction: column;
+			justify-content: center;
 			align-items: center;
+			width: 200px;
+			height: 48px;
+			border: none;
+			border-radius: 50px;
+			filter: drop-shadow(0px 3px 11px rgba(0,0,0,.10));
+		}
+	}
 
-			.hero__header-logo img {
-				width: 200px;
-				height: 30px;
-			}
-			.hero__header-cta {
-				background: #fff;
+	.hero__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 70px;
+
+		.hero__content-left {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 550px;
+			padding-top: 110px;
+
+			.hero__content-left--title p{
 				color: $darkCyan;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				font-size: 48px;
+				letter-spacing: 1px;
+			}
+			.hero__content-left--body p {
+				color: $darkCyan;
+				padding-top: 35px;
+				font-size: 1.2rem;
+				line-height: 1.2;
+				line-height:24px;
+			}
+			.hero__content-left--cta {
+				color: #fff;
+				background: $pink;
+				border-radius: 50px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				width: 200px;
-				height: 48px;
+				width: 280px;
+				height: 56px;
 				border: none;
-				border-radius: 50px;
-				filter: drop-shadow(0px 3px 11px rgba(0,0,0,.10));
+				margin-top: 35px;
 			}
 		}
-
-		.hero__content {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			margin-top: 70px;
-
-			.hero__content-left {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				width: 550px;
-				padding-top: 110px;
-
-				.hero__content-left--title p{
-					color: $darkCyan;
-					font-family: 'Poppins', sans-serif;
-					font-weight: 600;
-					font-size: 48px;
-					letter-spacing: 1px;
-				}
-				.hero__content-left--body p {
-					color: $darkCyan;
-					padding-top: 35px;
-					font-size: 1.2rem;
-					line-height: 1.2;
-					line-height:24px;
-				}
-				.hero__content-left--cta {
-					color: #fff;
-					background: $pink;
-					border-radius: 50px;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					width: 280px;
-					height: 56px;
-					border: none;
-					margin-top: 35px;
-				}
-			}
-			.hero__content-right img {
-				width: 790px;
-				height: 555px;
-			}
+		.hero__content-right img {
+			width: 790px;
+			height: 555px;
 		}
 	}
 }
+
+.main__content {
+	// border: 1px solid aqua;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 160px 0 160px 0;
+
+	.main__content-cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 60px 0;
+		width: 70%;
+
+		.main__content-card {
+			background: #fff;
+			display: flex;
+			flex-direction: row;
+			border-radius: 10px;
+			width: 100%;
+			margin: 40px 0;
+			justify-content: space-around;
+			align-items: center;
+			filter: drop-shadow(0px 3px 11px rgba(0,0,0,.10));
+			padding: 44px 0;
+
+			.main__content-card-body {
+				width: 48%;
+				padding-left: 28px;
+
+				.title {
+					color: $darkCyan;
+					font-size: 28px;
+					font-weight: 600;
+				}
+				.body {
+					color: $grayishBlue;
+					font-size: 18px;
+					font-weight: 400;
+					padding-top: 30px;
+				}
+			}
+
+			.main__content-card--img img {
+				width: 410px;
+				height: 340px;
+			}
+
+		}
+	}
+}
+
+
 
 // REMEMBER: There is 40px on bottom of hero section
 // W:790px H:555px

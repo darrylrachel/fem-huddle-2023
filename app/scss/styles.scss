@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import "reset";
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+.hero {
+	background: url(../../images/bg-hero-desktop.svg) no-repeat center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 100vh;
+	background-color: rgba(237, 251, 255, 100);
+	padding: 40px 80px;
+
+	.container {
+	// border: 1px solid aqua;
+
+		.hero__header {
+			// background: black;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			.hero__header-logo img {
+				width: 200px;
+				height: 30px;
+			}
+			.hero__header-cta {
+				background: #fff;
+				color: $darkCyan;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 200px;
+				height: 48px;
+				border: none;
+				border-radius: 50px;
+				filter: drop-shadow(0px 3px 11px rgba(0,0,0,.10));
+			}
+		}
+
+		.hero__content {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 70px;
+
+			.hero__content-left {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 550px;
+				padding-top: 110px;
+
+				.hero__content-left--title p{
+					color: $darkCyan;
+					font-family: 'Poppins', sans-serif;
+					font-weight: 600;
+					font-size: 48px;
+					letter-spacing: 1px;
+				}
+				.hero__content-left--body p {
+					color: $darkCyan;
+					padding-top: 35px;
+					font-size: 1.2rem;
+					line-height: 1.2;
+					line-height:24px;
+				}
+				.hero__content-left--cta {
+					color: #fff;
+					background: $pink;
+					border-radius: 50px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					width: 280px;
+					height: 56px;
+					border: none;
+					margin-top: 35px;
+				}
+			}
+			.hero__content-right img {
+				width: 790px;
+				height: 555px;
+			}
+		}
+	}
+}
+
+// REMEMBER: There is 40px on bottom of hero section
+// W:790px H:555px

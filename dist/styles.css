@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+.hero {
+  background: url(../../images/bg-hero-desktop.svg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  background-color: rgb(237, 251, 255);
+  padding: 40px 80px;
+}
+.hero .container .hero__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .container .hero__header .hero__header-logo img {
+  width: 200px;
+  height: 30px;
+}
+.hero .container .hero__header .hero__header-cta {
+  background: #fff;
+  color: hsl(192, 100%, 9%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  border: none;
+  border-radius: 50px;
+  filter: drop-shadow(0px 3px 11px rgba(0, 0, 0, 0.1));
+}
+.hero .container .hero__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.hero .container .hero__content .hero__content-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  padding-top: 110px;
+}
+.hero .container .hero__content .hero__content-left .hero__content-left--title p {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+.hero .container .hero__content .hero__content-left .hero__content-left--body p {
+  color: hsl(192, 100%, 9%);
+  padding-top: 35px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  line-height: 24px;
+}
+.hero .container .hero__content .hero__content-left .hero__content-left--cta {
+  color: #fff;
+  background: hsl(322, 100%, 66%);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 56px;
+  border: none;
+  margin-top: 35px;
+}
+.hero .container .hero__content .hero__content-right img {
+  width: 790px;
+  height: 555px;
+}/*# sourceMappingURL=styles.css.map */
